@@ -8,8 +8,25 @@
 
 namespace Phpfunc\Model;
 
+use Phpfunc\Attribute\UserId;
+use Phpfunc\Attribute\UserEmail;
+use Phpfunc\Attribute\UserLogin;
+use Phpfunc\Attribute\UserPassword;
+use Phpfunc\Model;
 
-class User
+class User extends Model
 {
+    /** @var UserId */
+    public $user_id;
+
+    /** @var UserLogin */
+    public $user_login;
+
+    /** @var UserPassword */
+    public $user_password;
+
+    /** @var UserEmail */
+    public $user_email;
+
 
 }

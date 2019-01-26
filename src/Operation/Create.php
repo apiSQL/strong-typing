@@ -9,7 +9,7 @@
 namespace Phpfunc\Operation;
 
 
-class Create
+class Create extends OperationAbstract
 {
 
 }

@@ -9,7 +9,7 @@
 namespace Phpfunc\Attribute;
 
 
-class HolidayId
+class HolidayId implements IdInterface
 {
 
 }
