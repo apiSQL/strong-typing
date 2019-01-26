@@ -1,0 +1,37 @@
+{
+  "name": "tom-sapletta-com/php-func",
+  "version": "0.1.2",
+  "description": "Strong Typing for PHP",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "functional programming",
+    "strong typing"
+  ],
+  "homepage": "https://phpfunc.com",
+  "authors": [
+    {
+      "name": "Tomasz Sapletta",
+      "email": "tom@sapletta.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "nesbot/carbon": "*",
+    "codeception/codeception": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phpfunc\\": "src/",
+      "Config\\": "config/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phpfunc\\Tests\\": "tests/"
+    }
+  }
+}
