@@ -9,7 +9,9 @@
 namespace Phpfunc\Source;
 
 
-class Cache
+use Phpfunc\Source;
+
+class Cache extends Source
 {
 
 }

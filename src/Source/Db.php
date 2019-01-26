@@ -9,7 +9,9 @@
 namespace Phpfunc\Source;
 
 
-class Db
+use Phpfunc\Source;
+
+class Db extends Source
 {
 
 }

@@ -9,7 +9,9 @@
 namespace Phpfunc\Attribute;
 
 
-class UserLogin
+use Phpfunc\Generic\Name;
+
+class UserLogin extends Name
 {
 
 }

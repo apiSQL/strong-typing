@@ -8,6 +8,7 @@
 
 namespace Phpfunc\Operation;
 
+use Phpfunc\OperationAbstract;
 
 class Create extends OperationAbstract
 {

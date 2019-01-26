@@ -9,7 +9,9 @@
 namespace Phpfunc\Operation;
 
 
-class Delete
+use Phpfunc\OperationAbstract;
+
+class Delete extends OperationAbstract
 {
 
 }

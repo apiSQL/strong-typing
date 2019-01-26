@@ -9,7 +9,9 @@
 namespace Phpfunc\Source;
 
 
-class Filesystem
+use Phpfunc\Source;
+
+class Filesystem extends Source
 {
 
 }

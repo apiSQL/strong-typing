@@ -9,10 +9,26 @@
 namespace Phpfunc;
 
 
-abstract class OperationAbstract
+abstract class OperationAbstract implements ExecuteInterface
 {
     // DB, Filesystem
     public $source;
 
     public $model;
+
+    /**
+     * OperationAbstract constructor.
+     * @param $source
+     * @param $model
+     */
+    public function __construct($source, $model)
+    {
+        $this->source = $source;
+        $this->model = $model;
+    }
+
+    public function execute()
+    {
+        return $this;
+    }
 }

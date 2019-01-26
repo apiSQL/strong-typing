@@ -12,4 +12,8 @@ namespace Phpfunc;
 class Model
 {
 
+    public function FillBy(){
+        $model = $this->getModel();
+        return new Fill($model);
+    }
 }

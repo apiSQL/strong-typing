@@ -9,7 +9,9 @@
 namespace Phpfunc\Source;
 
 
-class Session
+use Phpfunc\Source;
+
+class Session extends Source
 {
 
 }

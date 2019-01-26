@@ -8,8 +8,10 @@
 
 namespace Phpfunc\Operation;
 
+use Phpfunc\OperationAbstract;
 
-class Read
+class Read extends OperationAbstract
 {
-
+    /** @var \Phpfunc\Model\CollectionAbstract */
+    public $model_collection;
 }

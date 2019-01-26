@@ -8,8 +8,9 @@
 
 namespace Phpfunc\Operation;
 
+use Phpfunc\OperationAbstract;
 
-class Update
+class Update extends OperationAbstract
 {
 
 }
