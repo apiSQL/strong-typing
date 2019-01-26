@@ -39,6 +39,7 @@ $model_worker = new ModelAttributeCollection(
 
 $gen = new ModelAttributeSql($model_worker);
 $sql = $gen->sqlGenerator()->sql;
+
 var_dump($sql);
 var_dump($model_worker->toArray());
 var_dump($model_worker->val('Address'));
@@ -50,11 +51,11 @@ $dbname = "strong";
 
 // Create connection
 
-$conn = null;
+$source = null;
 try {
-    $conn = new \PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $source = new \PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
-    $conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+    $source->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
 } catch (\PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
@@ -65,11 +66,13 @@ try {
 
 try {
 // use exec() because no results are returned
-    $conn->exec($sql);
+    $source->exec($sql);
     echo "Table $gen->table created successfully";
 } catch (\PDOException $e) {
     echo $sql . "<br>" . $e->getMessage();
 }
 
 //$conn->close();
+
+$create = new Create($source, $model_worker);
 

@@ -13,5 +13,27 @@ use Phpfunc\Source;
 
 class Db extends Source
 {
+    /** @var DbOperation */
+    public $operation;
+
+    /**
+     * @return DbOperation
+     */
+    public function getOperation(): DbOperation
+    {
+        return $this->operation;
+    }
+
+    /**
+     * @param DbOperation $operation
+     * @return Db
+     */
+    public function setOperation(DbOperation $operation): Db
+    {
+        $this->operation = $operation;
+        return $this;
+    }
+
+
 
 }

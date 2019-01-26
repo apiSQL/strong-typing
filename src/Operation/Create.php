@@ -8,9 +8,15 @@
 
 namespace Phpfunc\Operation;
 
+use Phpfunc\ExecuteInterface;
 use Phpfunc\OperationAbstract;
 
-class Create extends OperationAbstract
+class Create extends OperationAbstract implements ExecuteInterface
 {
+    public function execute()
+    {
+        $this->source->getOperation()->create($this->model);
 
+        return $this;
+    }
 }

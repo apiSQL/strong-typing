@@ -12,8 +12,10 @@ namespace Phpfunc;
 abstract class OperationAbstract implements ExecuteInterface
 {
     // DB, Filesystem
+    /** @var Source */
     public $source;
 
+    /** @var Model */
     public $model;
 
     /**
@@ -25,6 +27,7 @@ abstract class OperationAbstract implements ExecuteInterface
     {
         $this->source = $source;
         $this->model = $model;
+        $this->execute();
     }
 
     public function execute()
