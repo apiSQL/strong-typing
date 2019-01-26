@@ -9,6 +9,8 @@
 namespace Phpfunc\Model;
 
 
+use Phpfunc\AttributeCollection;
+
 class Holiday extends HolidayAbstract implements HolidayInterface
 {
 

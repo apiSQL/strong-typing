@@ -3,13 +3,15 @@
  * Created by PhpStorm.
  * User: tom
  * Date: 26.01.2019
- * Time: 10:52
+ * Time: 19:39
  */
 
 namespace Phpfunc\Generic;
 
 
-class Name extends \Phunc\Value
+use Phunc\Value;
+
+class FirstName extends Value
 {
 
 }
