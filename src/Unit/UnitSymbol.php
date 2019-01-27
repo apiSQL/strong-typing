@@ -9,9 +9,9 @@
 namespace Phpfunc\Unit;
 
 
-use Phpfunc\Unit;
+use Phpfunc\UnitAbstract;
 
-class UnitSymbol extends Unit
+class UnitSymbol extends UnitAbstract
 {
 
 }

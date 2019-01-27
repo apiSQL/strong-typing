@@ -9,9 +9,9 @@
 namespace Phpfunc\Unit;
 
 
-use Phpfunc\Unit;
+use Phpfunc\UnitAbstract;
 
-class UnitFactor extends Unit
+class UnitFactor extends UnitAbstract implements UnitFactorInterface
 {
 
 }

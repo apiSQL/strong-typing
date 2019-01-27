@@ -9,7 +9,17 @@
 namespace Phpfunc\Generic;
 
 
-class DaysAbstract
+use Phpfunc\ModelAttributeCollection;
+use Phpfunc\UnitAbstract;
+
+class DaysAbstract extends UnitAbstract
 {
+
+
+    /** @var ModelAttributeCollection */
+    protected $ModelAttributeCollection;
+
+
+
 
 }
