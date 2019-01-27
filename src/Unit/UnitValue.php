@@ -11,6 +11,11 @@ namespace Phpfunc\Unit;
 
 use Phpfunc\UnitAbstract;
 
+/**
+ * Wartość w DB jest zapisywana w postaci podstawowej, tzn. 60 Minut = 3600 integer
+ * Class UnitValue
+ * @package Phpfunc\Unit
+ */
 class UnitValue extends UnitAbstract
 {
 
