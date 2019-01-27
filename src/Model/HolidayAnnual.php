@@ -9,7 +9,21 @@
 namespace Phpfunc\Model;
 
 
+use Phunc\DateRange\DateRange;
+
 class HolidayAnnual extends Holiday implements HolidayInterface
 {
+    /** @var array */
+    public $collection = [];
+
+    /**
+     * HolidayAnnual constructor.
+     * @param array $collection
+     */
+    public function __construct(DateRange $holiday_range)
+    {
+        $this->collection = $collection;
+    }
+
 
 }

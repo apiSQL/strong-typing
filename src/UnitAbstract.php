@@ -30,6 +30,9 @@ abstract class UnitAbstract implements UnitFactorInterface, UnitNameInterface, U
     public $factor = 0;
 
     /** @var string */
+    public $format = ''; // time, date, PLZ, Code, Phone, Number
+
+    /** @var string */
     public $standard = '';
 
     /**
