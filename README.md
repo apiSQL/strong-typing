@@ -7,4 +7,9 @@ With Objects to generate any application with example benefits
     sh /apicra/composer_install.sh
     .\apicra\composer_install.bat
     
+## Routing
+
+/{Operation:Create,Delete}/{Model}
+
+/{Operation:Read,Update}/{Attribute}
     

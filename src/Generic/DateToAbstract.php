@@ -9,7 +9,7 @@
 namespace Phpfunc\Generic;
 
 
-class DateToAbstract
+class DateToAbstract extends Date
 {
 
 }

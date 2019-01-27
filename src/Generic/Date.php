@@ -2,14 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: tom
- * Date: 26.01.2019
- * Time: 15:08
+ * Date: 27.01.2019
+ * Time: 16:22
  */
 
 namespace Phpfunc\Generic;
 
 
-class DateCreatedAt extends Date
+class Date
 {
 
 }

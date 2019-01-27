@@ -18,7 +18,8 @@
   "require": {
     "php": ">=7.0",
     "nesbot/carbon": "*",
-    "codeception/codeception": "*"
+    "codeception/codeception": "*",
+    "tom-sapletta-com/phunc": "dev-master"
   },
   "autoload": {
     "psr-4": {
