@@ -19,6 +19,7 @@ use Phpfunc\Source\Db;
 use Phpfunc\Operation\Create;
 use Phpfunc\View\Form;
 
+// only for Form registration, data are not saved in DB
 $model_user_registration = new ModelAttributeCollection(
     'user_registration',
     [
@@ -28,12 +29,16 @@ $model_user_registration = new ModelAttributeCollection(
     ]
 );
 
+// Data from Form Registration are saved in DB
 $model_user_login = new ModelAttributeCollection(
     'user_login',
     [
+        new UserId(1),
         new UserLogin('tom'),
         new UserPasswordHash('pass'),
         new UserEmail('tom@tom.com'),
+        new DateCreated(''),
+        new DateUpdated(''),
     ]
 );
 
@@ -62,6 +67,7 @@ $form_create_new_worker->submit();
 $model_user_forgot_password = new ModelAttributeCollection(
     'user_forgot_password',
     [
+        new UserId(1),
         new UserLogin('tom'),
         new UserEmail('tom@tom.com'),
         new Url(''),
@@ -71,4 +77,15 @@ $model_user_forgot_password = new ModelAttributeCollection(
         new IpNumber(''),
     ]
 );
+
+// Form
+$form_model_user_forgot_password = new ModelAttributeCollection(
+    'user_forgot_password',
+    [
+        new UserLogin('tom'),
+        new UserEmail('tom@tom.com'),
+    ]
+);
+
+$form_user_forgot_password = new Form($source, $form_model_user_forgot_password);
 

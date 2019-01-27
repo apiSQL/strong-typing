@@ -9,7 +9,9 @@
 namespace Phpfunc\Attribute;
 
 
-class UserEmail
+use Unit\Unit;
+
+class UserEmail extends Unit
 {
 
 }
