@@ -10,7 +10,7 @@ namespace Apisql;
 
 /**
  * Class LocalValueAbstract
- * @package Phpfunc
+ * @package Apisql
  */
 abstract class LocalValueAbstract
 {

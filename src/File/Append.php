@@ -6,7 +6,7 @@
  * Time: 19:10
  */
 
-namespace Phpfunc\File;
+namespace Apisql\File;
 
 use Apisql\ExecuteInterface;
 use Apisql\OperationAbstract;
