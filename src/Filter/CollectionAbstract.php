@@ -6,10 +6,10 @@
  * Time: 15:00
  */
 
-namespace Phpfunc\Filter;
+namespace Apisql\Filter;
 
 
-class CollectionAbstract extends \Phpfunc\CollectionAbstract
+class CollectionAbstract extends \Apisql\CollectionAbstract
 {
 
 }

@@ -6,7 +6,7 @@
  * Time: 13:43
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 class ModelAttributeCollection extends Model

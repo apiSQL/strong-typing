@@ -6,10 +6,10 @@
  * Time: 09:46
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
 
-use Phpfunc\Model;
+use Apisql\Model;
 
 class HolidayAbstract  extends Model implements HolidayInterface
 {

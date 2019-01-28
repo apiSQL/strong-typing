@@ -6,9 +6,9 @@
  * Time: 13:36
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
-use Phpfunc\Generic\DayInterface;
+use Apisql\Generic\DayInterface;
 
 class ContractHoliday implements DayInterface
 {

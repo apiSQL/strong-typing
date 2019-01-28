@@ -6,11 +6,11 @@
  * Time: 12:56
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
-use Phpfunc\ModelAttributeCollection;
-use Phpfunc\UnitAbstract;
+use Apisql\ModelAttributeCollection;
+use Apisql\UnitAbstract;
 
 class DaysAbstract extends UnitAbstract
 {

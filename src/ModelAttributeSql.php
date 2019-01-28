@@ -6,7 +6,7 @@
  * Time: 13:43
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 // Generator Kodu Sql z Modelu danych z kolekcji
 class ModelAttributeSql

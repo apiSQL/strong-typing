@@ -6,7 +6,7 @@
  * Time: 22:52
  */
 
-namespace Phpfunc\View\Input;
+namespace Apisql\View\Input;
 
 
 class Date

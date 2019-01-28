@@ -6,10 +6,10 @@
  * Time: 22:57
  */
 
-namespace Phpfunc\LocalValue;
+namespace Apisql\LocalValue;
 
 
-use Phpfunc\LocalValueAbstract;
+use Apisql\LocalValueAbstract;
 
 class LocalName extends LocalValueAbstract
 {

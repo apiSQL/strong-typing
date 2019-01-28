@@ -6,7 +6,7 @@
  * Time: 22:48
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 class View

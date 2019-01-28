@@ -6,7 +6,7 @@
  * Time: 12:27
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 interface DateToInterface

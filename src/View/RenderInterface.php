@@ -6,12 +6,12 @@
  * Time: 22:47
  */
 
-namespace Phpfunc\View;
+namespace Apisql\View;
 
 /**
  * Generating the HTML objects, forms
  * Class Form
- * @package Phpfunc\View
+ * @package Apisql\View
  */
 interface RenderInterface
 {

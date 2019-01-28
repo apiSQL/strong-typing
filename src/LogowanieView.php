@@ -6,18 +6,18 @@
  * Time: 13:41
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php'; // Autoload files using Composer autoload
 
-use Phpfunc\Attribute\UserEmail;
-use Phpfunc\Attribute\UserLogin;
-use Phpfunc\Attribute\UserPassword;
-use Phpfunc\Generic\Address;
-use Phpfunc\Crud\Update;
-use Phpfunc\Source\Db;
-use Phpfunc\Crud\Create;
-use Phpfunc\View\Form;
+use Apisql\Attribute\UserEmail;
+use Apisql\Attribute\UserLogin;
+use Apisql\Attribute\UserPassword;
+use Apisql\Generic\Address;
+use Apisql\Crud\Update;
+use Apisql\Source\Db;
+use Apisql\Crud\Create;
+use Apisql\View\Form;
 
 // only for Form registration, data are not saved in DB
 $model_user_registration = new ModelAttributeCollection(

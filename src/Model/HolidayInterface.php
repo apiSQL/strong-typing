@@ -6,7 +6,7 @@
  * Time: 13:00
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
 
 interface HolidayInterface

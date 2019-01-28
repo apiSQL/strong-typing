@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 abstract class AccessAbstract

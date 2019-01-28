@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Phpfunc\Sql;
+namespace Apisql\Sql;
 
 
-use Phpfunc\ExecuteInterface;
-use Phpfunc\OperationAbstract;
+use Apisql\ExecuteInterface;
+use Apisql\OperationAbstract;
 
 class Sum extends OperationAbstract implements ExecuteInterface
 {

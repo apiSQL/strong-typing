@@ -6,14 +6,14 @@
  * Time: 22:47
  */
 
-namespace Phpfunc\View;
+namespace Apisql\View;
 
-use Phpfunc\View;
+use Apisql\View;
 
 /**
  * Generating the HTML objects, forms
  * Class Form
- * @package Phpfunc\View
+ * @package Apisql\View
  */
 class Form extends View
 {

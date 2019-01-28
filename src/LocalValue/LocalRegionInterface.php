@@ -6,7 +6,7 @@
  * Time: 22:56
  */
 
-namespace Phpfunc\LocalValue;
+namespace Apisql\LocalValue;
 
 
 interface LocalRegionInterface

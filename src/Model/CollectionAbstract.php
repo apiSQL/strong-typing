@@ -6,10 +6,10 @@
  * Time: 14:08
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
 
-class CollectionAbstract extends \Phpfunc\CollectionAbstract
+class CollectionAbstract extends \Apisql\CollectionAbstract
 {
     public $collection = [];
 }

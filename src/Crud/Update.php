@@ -6,9 +6,9 @@
  * Time: 09:37
  */
 
-namespace Phpfunc\Crud;
+namespace Apisql\Crud;
 
-use Phpfunc\OperationAbstract;
+use Apisql\OperationAbstract;
 
 class Update extends OperationAbstract
 {

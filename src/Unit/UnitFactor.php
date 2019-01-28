@@ -6,10 +6,10 @@
  * Time: 14:51
  */
 
-namespace Phpfunc\Unit;
+namespace Apisql\Unit;
 
 
-use Phpfunc\UnitAbstract;
+use Apisql\UnitAbstract;
 
 class UnitFactor extends UnitAbstract implements UnitFactorInterface
 {

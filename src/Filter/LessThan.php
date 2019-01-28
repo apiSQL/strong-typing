@@ -6,7 +6,7 @@
  * Time: 15:05
  */
 
-namespace Phpfunc\Filter;
+namespace Apisql\Filter;
 
 
 class LessThan

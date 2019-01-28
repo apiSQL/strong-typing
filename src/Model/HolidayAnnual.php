@@ -6,7 +6,7 @@
  * Time: 12:59
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
 
 use Phunc\DateRange\DateRange;

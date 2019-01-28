@@ -6,10 +6,10 @@
  * Time: 13:40
  */
 
-namespace Phpfunc\Source;
+namespace Apisql\Source;
 
 
-use Phpfunc\Source;
+use Apisql\Source;
 
 class Session extends Source
 {

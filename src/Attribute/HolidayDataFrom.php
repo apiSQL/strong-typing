@@ -6,9 +6,9 @@
  * Time: 13:53
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
-use Phpfunc\Generic\DateFromAbstract;
+use Apisql\Generic\DateFromAbstract;
 
 class HolidayDataFrom extends DataFromAbstract
 {

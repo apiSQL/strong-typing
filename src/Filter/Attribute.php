@@ -6,7 +6,7 @@
  * Time: 15:00
  */
 
-namespace Phpfunc\Filter;
+namespace Apisql\Filter;
 
 
 class Attribute

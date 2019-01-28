@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Phpfunc;
+namespace Apisql;
 
 
-use Phpfunc\Access\AccessOperation;
-use Phpfunc\Access\AccessRole;
-use Phpfunc\Access\AccessUser;
+use Apisql\Access\AccessOperation;
+use Apisql\Access\AccessRole;
+use Apisql\Access\AccessUser;
 
 class AccessCollection extends CollectionAbstract
 {

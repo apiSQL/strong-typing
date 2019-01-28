@@ -6,7 +6,7 @@
  * Time: 13:53
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
 
 class HolidaySaldo

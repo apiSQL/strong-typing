@@ -6,7 +6,7 @@
  * Time: 15:08
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 class DateUpdatedAt extends Date

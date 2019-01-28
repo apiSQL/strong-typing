@@ -6,14 +6,14 @@
  * Time: 15:07
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
-use Phpfunc\Unit\UnitFactorInterface;
-use Phpfunc\Unit\UnitNameInterface;
-use Phpfunc\Unit\UnitStandardInterface;
-use Phpfunc\Unit\UnitSymbolInterface;
-use Phpfunc\Unit\UnitValueInterface;
+use Apisql\Unit\UnitFactorInterface;
+use Apisql\Unit\UnitNameInterface;
+use Apisql\Unit\UnitStandardInterface;
+use Apisql\Unit\UnitSymbolInterface;
+use Apisql\Unit\UnitValueInterface;
 
 abstract class UnitAbstract implements UnitFactorInterface, UnitNameInterface, UnitStandardInterface, UnitValueInterface, UnitSymbolInterface
 {

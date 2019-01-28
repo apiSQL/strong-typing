@@ -6,10 +6,10 @@
  * Time: 14:51
  */
 
-namespace Phpfunc\Unit;
+namespace Apisql\Unit;
 
 
-use Phpfunc\LocalValueAbstract;
+use Apisql\LocalValueAbstract;
 
 class LocalFormat extends LocalValueAbstract
 {

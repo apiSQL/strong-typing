@@ -6,7 +6,7 @@
  * Time: 13:42
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 class Operation

@@ -6,7 +6,7 @@
  * Time: 15:27
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 class UrlPath implements Url

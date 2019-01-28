@@ -6,7 +6,7 @@
  * Time: 15:01
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 class Filter

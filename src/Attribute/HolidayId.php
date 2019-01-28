@@ -6,7 +6,7 @@
  * Time: 09:38
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
 
 class HolidayId implements IdInterface

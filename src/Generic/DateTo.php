@@ -6,7 +6,7 @@
  * Time: 10:52
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 class DateTo extends Date

@@ -6,10 +6,10 @@
  * Time: 09:37
  */
 
-namespace Phpfunc\Crud;
+namespace Apisql\Crud;
 
-use Phpfunc\ExecuteInterface;
-use Phpfunc\OperationAbstract;
+use Apisql\ExecuteInterface;
+use Apisql\OperationAbstract;
 
 interface UpdateInterface
 {

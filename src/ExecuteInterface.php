@@ -6,7 +6,7 @@
  * Time: 14:15
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 interface ExecuteInterface

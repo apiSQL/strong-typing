@@ -6,7 +6,7 @@
  * Time: 10:51
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 class Generic

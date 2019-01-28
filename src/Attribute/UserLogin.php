@@ -6,10 +6,10 @@
  * Time: 10:35
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
 
-use Phpfunc\Generic\Name;
+use Apisql\Generic\Name;
 
 class UserLogin extends Name
 {

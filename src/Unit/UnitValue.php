@@ -6,15 +6,15 @@
  * Time: 14:51
  */
 
-namespace Phpfunc\Unit;
+namespace Apisql\Unit;
 
 
-use Phpfunc\UnitAbstract;
+use Apisql\UnitAbstract;
 
 /**
  * Wartość w DB jest zapisywana w postaci podstawowej, tzn. 60 Minut = 3600 integer
  * Class UnitValue
- * @package Phpfunc\Unit
+ * @package Apisql\Unit
  */
 class UnitValue extends UnitAbstract
 {

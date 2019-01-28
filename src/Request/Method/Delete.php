@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Phpfunc\Request\Method;
+namespace Apisql\Request\Method;
 
 
-use Phpfunc\ExecuteInterface;
-use Phpfunc\OperationAbstract;
+use Apisql\ExecuteInterface;
+use Apisql\OperationAbstract;
 
 class Delete extends OperationAbstract implements ExecuteInterface
 {

@@ -6,7 +6,7 @@
  * Time: 14:04
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 class Source

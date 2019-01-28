@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Phpfunc\Sql\Type;
+namespace Apisql\Sql\Type;
 
 
 class Number

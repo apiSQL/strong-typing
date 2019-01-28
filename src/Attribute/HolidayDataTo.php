@@ -6,10 +6,10 @@
  * Time: 13:53
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
 
-use Phpfunc\Generic\DateToAbstract;
+use Apisql\Generic\DateToAbstract;
 
 class HolidayDataTo extends DateToAbstract
 {

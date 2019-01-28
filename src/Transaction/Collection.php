@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Phpfunc\Transaction;
+namespace Apisql\Transaction;
 
 
-use Phpfunc\CollectionAbstract;
+use Apisql\CollectionAbstract;
 
 class Collection extends CollectionAbstract
 {

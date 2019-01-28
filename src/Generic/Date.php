@@ -6,7 +6,7 @@
  * Time: 16:22
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 class Date

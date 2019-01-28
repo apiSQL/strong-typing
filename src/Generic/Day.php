@@ -6,7 +6,7 @@
  * Time: 12:56
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 class Day

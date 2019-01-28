@@ -6,12 +6,12 @@
  * Time: 15:15
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
 
-use Phpfunc\Filter\Attribute;
-use Phpfunc\Model;
-use Phpfunc\ModelAbstract;
+use Apisql\Filter\Attribute;
+use Apisql\Model;
+use Apisql\ModelAbstract;
 
 class Fill extends ModelAbstract
 {

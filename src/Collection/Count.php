@@ -6,7 +6,7 @@
  * Time: 12:57
  */
 
-namespace Phpfunc\Collection;
+namespace Apisql\Collection;
 
 
 class Count

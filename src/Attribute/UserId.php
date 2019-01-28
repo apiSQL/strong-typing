@@ -6,7 +6,7 @@
  * Time: 09:36
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
 
 class UserId implements IdInterface

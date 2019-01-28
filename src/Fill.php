@@ -6,10 +6,10 @@
  * Time: 15:37
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
-use Phpfunc\Filter\Attribute;
+use Apisql\Filter\Attribute;
 
 class Fill
 {

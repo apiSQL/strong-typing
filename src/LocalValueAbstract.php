@@ -6,7 +6,7 @@
  * Time: 22:54
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 /**
  * Class LocalValueAbstract

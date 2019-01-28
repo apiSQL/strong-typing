@@ -6,7 +6,7 @@
  * Time: 12:58
  */
 
-namespace Phpfunc\Collection;
+namespace Apisql\Collection;
 
 
 class Sum

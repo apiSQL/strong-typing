@@ -6,7 +6,7 @@
  * Time: 12:33
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 interface PasswordInterface

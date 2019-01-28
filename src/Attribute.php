@@ -7,26 +7,26 @@
  */
 
 
-namespace Phpfunc;
+namespace Apisql;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php'; // Autoload files using Composer autoload
 
 
-use Phpfunc\Attribute\UserEmail;
-use Phpfunc\Attribute\UserLogin;
-use Phpfunc\Attribute\UserPassword;
-use Phpfunc\Generic\Address;
-use Phpfunc\Generic\DateCreatedAt;
-use Phpfunc\Generic\DateFrom;
-use Phpfunc\Generic\DateTo;
-use Phpfunc\Generic\FirstName;
-use Phpfunc\Generic\Identify;
-use Phpfunc\Generic\LastName;
-use Phpfunc\Model\User;
-use Phpfunc\Crud\Delete;
-use Phpfunc\Crud\Read;
-use Phpfunc\Source\Db;
-use Phpfunc\Crud\Create;
+use Apisql\Attribute\UserEmail;
+use Apisql\Attribute\UserLogin;
+use Apisql\Attribute\UserPassword;
+use Apisql\Generic\Address;
+use Apisql\Generic\DateCreatedAt;
+use Apisql\Generic\DateFrom;
+use Apisql\Generic\DateTo;
+use Apisql\Generic\FirstName;
+use Apisql\Generic\Identify;
+use Apisql\Generic\LastName;
+use Apisql\Model\User;
+use Apisql\Crud\Delete;
+use Apisql\Crud\Read;
+use Apisql\Source\Db;
+use Apisql\Crud\Create;
 
 $model_worker = new ModelAttributeCollection(
     'worker',

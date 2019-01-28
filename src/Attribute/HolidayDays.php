@@ -6,9 +6,9 @@
  * Time: 13:53
  */
 
-namespace Phpfunc\Attribute;
+namespace Apisql\Attribute;
 
-use Phpfunc\Generic\DaysAbstract;
+use Apisql\Generic\DaysAbstract;
 
 class HolidayDays extends DaysAbstract
 {

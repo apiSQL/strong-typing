@@ -6,7 +6,7 @@
  * Time: 19:42
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 use Phunc\Value;
 

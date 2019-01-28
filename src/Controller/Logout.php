@@ -6,11 +6,11 @@
  * Time: 10:36
  */
 
-namespace Phpfunc\Controller;
+namespace Apisql\Controller;
 
 
-use Phpfunc\Attribute\UserLogin;
-use Phpfunc\Attribute\UserPassword;
+use Apisql\Attribute\UserLogin;
+use Apisql\Attribute\UserPassword;
 
 class Logout
 {

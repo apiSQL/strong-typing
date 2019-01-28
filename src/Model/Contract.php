@@ -6,13 +6,13 @@
  * Time: 10:50
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
 
-use Phpfunc\Generic\DateFromInterface;
-use Phpfunc\Generic\DateToInterface;
-use Phpfunc\Generic\MoneyInterface;
-use Phpfunc\Model;
+use Apisql\Generic\DateFromInterface;
+use Apisql\Generic\DateToInterface;
+use Apisql\Generic\MoneyInterface;
+use Apisql\Model;
 
 class Contract extends Model implements DateFromInterface, DateToInterface, MoneyInterface, HolidayInterface
 {

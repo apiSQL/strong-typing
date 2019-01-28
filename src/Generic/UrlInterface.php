@@ -6,7 +6,7 @@
  * Time: 15:26
  */
 
-namespace Phpfunc\Generic;
+namespace Apisql\Generic;
 
 
 interface Url

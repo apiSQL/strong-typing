@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Phpfunc\Transaction\Collection;
+namespace Apisql\Transaction\Collection;
 
 
 class Execute

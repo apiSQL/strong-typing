@@ -6,7 +6,7 @@
  * Time: 14:07
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 abstract class CollectionAbstract

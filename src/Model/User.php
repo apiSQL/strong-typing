@@ -6,13 +6,13 @@
  * Time: 09:37
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
-use Phpfunc\Attribute\UserId;
-use Phpfunc\Attribute\UserEmail;
-use Phpfunc\Attribute\UserLogin;
-use Phpfunc\Attribute\UserPassword;
-use Phpfunc\Model;
+use Apisql\Attribute\UserId;
+use Apisql\Attribute\UserEmail;
+use Apisql\Attribute\UserLogin;
+use Apisql\Attribute\UserPassword;
+use Apisql\Model;
 
 class User extends Model
 {

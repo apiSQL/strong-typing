@@ -6,7 +6,7 @@
  * Time: 15:00
  */
 
-namespace Phpfunc;
+namespace Apisql;
 
 
 class AttributeCollection

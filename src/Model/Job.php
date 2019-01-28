@@ -6,10 +6,10 @@
  * Time: 10:48
  */
 
-namespace Phpfunc\Model;
+namespace Apisql\Model;
 
 
-use Phpfunc\Model;
+use Apisql\Model;
 
 class Job extends Model
 {
