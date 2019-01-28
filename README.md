@@ -12,4 +12,6 @@ With Objects to generate any application with example benefits
 /{Operation:Create,Delete}/{Model}
 
 /{Operation:Read,Update}/{Attribute}
-    
+
+
+## access control list (ACL)
