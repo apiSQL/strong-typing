@@ -11,7 +11,7 @@ namespace Apisql;
 
 class ModelAttributeCollection extends Model
 {
-
+    /** @var string */
     public $name;
 
     /** @var AttributeCollection */
@@ -22,10 +22,10 @@ class ModelAttributeCollection extends Model
      * @param string $name
      * @param array $attribute_collection
      */
-    public function __construct(string $name, array $attribute_collection)
+    public function __construct(string $name)
     {
         $this->name = $name;
-        $this->attribute_collection = $attribute_collection;
+        $this->attribute_collection = new AttributeCollection();
     }
 
     public function __call($name, $arguments)
@@ -71,19 +71,9 @@ class ModelAttributeCollection extends Model
     /**
      * @return AttributeCollection
      */
-    public function getAttributeCollection(): AttributeCollection
+    public function attributeCollection(): AttributeCollection
     {
         return $this->attribute_collection;
-    }
-
-    /**
-     * @param AttributeCollection $attribute_collection
-     * @return ModelAttributeCollection
-     */
-    public function setAttributeCollection(AttributeCollection $attribute_collection): ModelAttributeCollection
-    {
-        $this->attribute_collection = $attribute_collection;
-        return $this;
     }
 
     public function val($name)
