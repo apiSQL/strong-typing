@@ -6,13 +6,13 @@
  * Time: 09:37
  */
 
-namespace Phpfunc\Operation;
+namespace Phpfunc\Crud;
 
 use Phpfunc\ExecuteInterface;
 use Phpfunc\OperationAbstract;
 
-interface UpdateInterface
+interface DeleteInterface
 {
-    public function update();
+    public function delete();
     public function execute();
 }

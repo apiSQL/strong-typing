@@ -14,9 +14,9 @@ use Phpfunc\Attribute\UserEmail;
 use Phpfunc\Attribute\UserLogin;
 use Phpfunc\Attribute\UserPassword;
 use Phpfunc\Generic\Address;
-use Phpfunc\Operation\Update;
+use Phpfunc\Crud\Update;
 use Phpfunc\Source\Db;
-use Phpfunc\Operation\Create;
+use Phpfunc\Crud\Create;
 use Phpfunc\View\Form;
 
 // only for Form registration, data are not saved in DB

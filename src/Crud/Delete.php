@@ -6,7 +6,7 @@
  * Time: 09:37
  */
 
-namespace Phpfunc\Operation;
+namespace Phpfunc\Crud;
 
 
 use Phpfunc\OperationAbstract;

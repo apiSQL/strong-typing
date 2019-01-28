@@ -9,8 +9,8 @@
 namespace Phpfunc\Source;
 
 
-use Phpfunc\Operation\CreateInterface;
-use Phpfunc\Operation\ReadInterface;
+use Phpfunc\Crud\CreateInterface;
+use Phpfunc\Crud\ReadInterface;
 use Phpfunc\OperationAbstract;
 use Phpfunc\Source;
 

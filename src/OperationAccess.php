@@ -26,11 +26,11 @@ use Phpfunc\Generic\FirstName;
 use Phpfunc\Generic\Identify;
 use Phpfunc\Generic\LastName;
 use Phpfunc\Model\User;
-use Phpfunc\Operation\Delete;
-use Phpfunc\Operation\Read;
-use Phpfunc\Operation\Update;
+use Phpfunc\Crud\Delete;
+use Phpfunc\Crud\Read;
+use Phpfunc\Crud\Update;
 use Phpfunc\Source\Db;
-use Phpfunc\Operation\Create;
+use Phpfunc\Crud\Create;
 use Phpfunc\View\Form;
 
 $model_worker = new ModelAttributeCollection(

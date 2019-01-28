@@ -4,7 +4,10 @@
 namespace Phpfunc\Request\Method;
 
 
-class Post
+use Phpfunc\ExecuteInterface;
+use Phpfunc\OperationAbstract;
+
+class Post extends OperationAbstract implements ExecuteInterface
 {
 
 }
