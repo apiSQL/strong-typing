@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Phpfunc\Access;
+namespace Apisql\Access;
 
 
-use Phpfunc\AccessAbstract;
+use Apisql\AccessAbstract;
 
 // Access depends url
 class AccessRouting extends AccessAbstract

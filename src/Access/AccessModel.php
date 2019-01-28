@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Phpfunc\Access;
+namespace Apisql\Access;
 
 
-use Phpfunc\AccessAbstract;
+use Apisql\AccessAbstract;
 
 // Permission for Operation: CRUD
 class AccessModel extends AccessAbstract

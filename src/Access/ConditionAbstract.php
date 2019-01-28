@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Phpfunc\Access;
+namespace Apisql\Access;
 
 
 abstract class ConditionAbstract

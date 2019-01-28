@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Phpfunc\Access\Condition;
+namespace Apisql\Access\Condition;
 
 
-use Phpfunc\Access\ConditionAbstract;
+use Apisql\Access\ConditionAbstract;
 
 class Allows extends ConditionAbstract
 {

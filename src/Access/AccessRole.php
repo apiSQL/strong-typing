@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Phpfunc\Access;
+namespace Apisql\Access;
 
 
-use Phpfunc\AccessAbstract;
+use Apisql\AccessAbstract;
 
 class AccessRole extends AccessAbstract
 {

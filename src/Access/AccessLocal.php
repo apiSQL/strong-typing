@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Phpfunc\Access;
+namespace Apisql\Access;
 
 
-use Phpfunc\AccessAbstract;
+use Apisql\AccessAbstract;
 
 // Access depends Localisation of User, Region: city, country, continent
 class AccessLocal extends AccessAbstract
