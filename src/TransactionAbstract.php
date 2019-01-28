@@ -4,7 +4,9 @@
 namespace Apisql;
 
 
-abstract class TransactionAbstract
+abstract class TransactionAbstract implements ExecuteInterface
 {
 
+//    public function execute() {
+//    }
 }

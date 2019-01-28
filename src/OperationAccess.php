@@ -100,11 +100,22 @@ $acces_operation_user = new AccessOperation(
     ),
 );
 
+
+$user_model = new Model('user');
+$user_name = new ModelAttributeCollection(
+    'user',
+    [
+        new FirstName('Tom'),
+        new LastName('Sap'),
+    ]
+);
+$url_user_name = new Url('/user/hello');
+
 $acces_routing = new AccessOperation(
     new Post(
-        new Url('/user/hello'),
-        new Model('user')
-    ),
+        $url_user_name,
+        $user_name
+    )
 );
 
 $condition_allows =
