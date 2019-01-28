@@ -12,6 +12,7 @@ namespace Phpfunc;
 require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php'; // Autoload files using Composer autoload
 
 
+use Phpfunc\Access\AccessOperation;
 use Phpfunc\Access\AccessRole;
 use Phpfunc\Access\AccessUser;
 use Phpfunc\Attribute\UserEmail;
@@ -87,3 +88,29 @@ $form_create_new_worker->render();
 // http://localhost/update/worker/address
 new Update($source, $model_worker_address);
 
+
+$acces_user = new AccessUser(
+    new UserId(10)
+);
+
+$acces_operation_user = new AccessOperation(
+    new Create(
+        new Source('db'),
+        new Model('user')
+    ),
+);
+
+$acces_routing = new AccessOperation(
+    new Post(
+        new Source('db'),
+        new Model('user')
+    ),
+);
+
+$condition_allows =
+//new Access($acces_user, )
+
+$collection = new AccessCollection(
+    new Access\Condition\Allows($acces_operation_user),
+    new Access\Condition\Allows($acces_user),
+);

@@ -7,29 +7,40 @@ namespace Phpfunc;
 use Phpfunc\Access\AccessOperation;
 use Phpfunc\Access\AccessRole;
 use Phpfunc\Access\AccessUser;
+use Phpfunc\Access\ConditionAbstract;
 
 class Access extends AccessAbstract //CollectionAbstract
 {
     /** @var AccessOperation */
-    public $operation;
+//    public $operation;
 
     /** @var AccessRole */
-    public $role;
+//    public $role;
 
     /** @var AccessUser */
-    public $user;
+//    public $user;
 
 
-    public $collection;
+//    public $collection;
+
+
+    /** @var AccessAbstract */
+    public $access;
+
+    /** @var ConditionAbstract */
+    public $condition;
 
     /**
      * Access constructor.
-     * @param $collection
+     * @param AccessAbstract $access
+     * @param ConditionAbstract $condition
      */
-    public function __construct(array $collection)
+    public function __construct(AccessAbstract $access, ConditionAbstract $condition)
     {
-        $this->collection = $collection;
+        $this->access = $access;
+        $this->condition = $condition;
     }
+
 
 
     /**

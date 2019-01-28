@@ -3,8 +3,8 @@
 
 namespace Phpfunc\Access;
 
-// AccessControlPolicy
-class Role
+
+abstract class ConditionAbstract
 {
 
 }
