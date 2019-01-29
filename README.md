@@ -49,5 +49,11 @@ Dzieki uzyciu typowania w OOP mozliwe jest wielouzycie tego samego kodu, napisan
 4. Konfiguracja w innym jezyku na podstawie uzycia tych samych danych zrodlowych konfiguracji JSON/YML
 
 
-### ciekawer funkcje
+### ciekawe funkcje z laravel
 https://laravel.com/docs/5.7/helpers
+
+
+### TRansformacje danych pomiedzy MVC
+
+https://symfony.com/doc/current/form/data_transformers.html
+![dia](https://symfony.com/doc/current/_images/data-transformer-types.png)
