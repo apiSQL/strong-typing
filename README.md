@@ -47,3 +47,7 @@ Dzieki uzyciu typowania w OOP mozliwe jest wielouzycie tego samego kodu, napisan
     Cache
 3. Uzycie aplikacji poprzez API
 4. Konfiguracja w innym jezyku na podstawie uzycia tych samych danych zrodlowych konfiguracji JSON/YML
+
+
+### ciekawer funkcje
+https://laravel.com/docs/5.7/helpers
