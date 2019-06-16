@@ -1,6 +1,29 @@
 # strong-typing
 With Objects to generate any application with example benefits 
 
+### Install -apicra
+
+    echo .apicra/ >> .gitignore
+    git clone https://github.com/apicra/npm-github-win.git .apicra
+
+or 
+
+    git clone https://gist.github.com/tom-sapletta-com/0ab2fbd82c6a6efba131db52588e1f3b apicra && copy apicra\* . && RMDIR /Q /S apicra && -apicra.bat install
+
+or
+    
+    git clone https://gist.github.com/tom-sapletta-com/0ab2fbd82c6a6efba131db52588e1f3b .apicra && .apicra/-apicra.bat install
+
+## composer 
+ 
+### Install .apicra Module: composer
+
+    -apicra.bat i composer
+        
+### Install Composer by .apicra Module
+
+    -composer.bat i
+
 
 ### Install by Apicra
 
@@ -35,7 +58,7 @@ Kazda webowa aplikacja ma pewne cechy uniwersalne, jak
 
 
 
-Oferuja to frameworki, ale one nie sa tlumaczone na rozne jezyki i w kazdym jezyku programowania jest inny framework
+Oferuja to frameworki, ale one nie sa tłumaczone na różne języki programowania i w każdym języku programowania jest inna semantyka.
 
 Dzieki uzyciu typowania w OOP mozliwe jest wielouzycie tego samego kodu, napisanego w innym jezyku programowania.
 
@@ -47,6 +70,38 @@ Dzieki uzyciu typowania w OOP mozliwe jest wielouzycie tego samego kodu, napisan
     Cache
 3. Uzycie aplikacji poprzez API
 4. Konfiguracja w innym jezyku na podstawie uzycia tych samych danych zrodlowych konfiguracji JSON/YML
+
+
+### Przykład z konwersją modelu danych na kod SQL
+
++ model danych
+    
+        class UserModel {
+            $username;
+            $firstname;
+            $lastname;
+            $email;
+        } 
+
++ convert One Attribute of Model to Strong Typed Attribute 
+        AttributeGenerator
+        
+        
++ convert to collection with strong-typing
+    if type is not defined, use AttributeTypeGenerator
+     
+         class AttributeCollection {
+             $collection = [
+                0 => new Attribute('username'),
+                1 => new Attribute('firstname'),
+                2 => new Attribute('lastname'),
+                3 => new Attribute('email'),
+             ];
+         }    
+
++ generate SQL from strong-typing
+
+    get each attribute, 
 
 
 ### ciekawe funkcje z laravel

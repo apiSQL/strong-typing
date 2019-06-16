@@ -20,7 +20,6 @@ class ModelAttributeCollection extends Model
     /**
      * ModelAttributeCollection constructor.
      * @param string $name
-     * @param array $attribute_collection
      */
     public function __construct(string $name)
     {
