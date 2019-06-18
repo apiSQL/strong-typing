@@ -17,43 +17,44 @@ beda one zajmowaly wiecej miejsca, ale beda tez latwiejsze w przesylaniu i uzyci
 ## Przyklad 1
 zamiast tworzyć request do logowania:
 
-  /GET
-    login:
-    password:
+    /GET
+      login:
+      password:
 
 i odebrać 
-  token: 
+
+    token: 
 
 
 Kolekcja procesów:
+
 - czyli jakiekolwiek dane przyjdą, wykonaj z nimi te operacje:
 jeśli jakiej danej nie ma to problem zwróci proces, który tej danej potrzebuje.
-
 W ten sposób definicja procesów, funkcji w naturalny sposób waliduje
+Chodzi też o unikanie tworzenia struktury, gdyż to nie ma znaczenia dla procesu jaka jest struktura danych
+a to tylko wprowadza komplikację
+
 np:
+stwórzmy kolekcję danych potrzebnych do zwrócenia tokenu:
+potrzebujemy to adres url, login, hasło
 
 
-new DataCollection(
-  new Url("/authorisation"),
-  
-  
-)
+    $dataCollection = new DataCollection(
+      new Url("https://apisql.com/authorisation"),
+      new UserLogin("/authorisation"),
+      new UserPassword("/authorisation"),
+    )
 
 
-new ProcesCollection(
-  new Request("authorisation"),
-  
-  
-)
+    $processCollection = new ProcesCollection(
+      new Request("authorisation"),
 
 
-new Execute(
-  new DataCollection(),
-  new ProcesCollection(),
-)
-  
-  new Request(
-    
-    new 
-  )
+    )
+
+
+     $authorisation = new Execute(
+        $dataCollection,
+        $processCollection
+     )
 
