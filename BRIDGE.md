@@ -1,10 +1,13 @@
-Mosty, bramy do wymiany danych z innymi standardami, 
+# Mosty, bramy do wymiany danych z innymi standardami, 
+
+Z myślą o zarzadzaniu danymi i procesami a nie ich definiowaniem
+
 
 Zamiast jak obecnie skupiać się na procesach w twiorzeniu aplikacji, 
 lepisj procesy ustandaryzowac i dane ustalać inydiwualnie.
 
 
-# Obecne requesty
+## Obecne requesty
 
 każdy request dostosowuje się pod względem danych
 
@@ -144,23 +147,34 @@ Wykonaj prcesy i w oparciu o dostarczone dane wygeneruj nowe
             $processCollection,
          )         
 
-przykład danych wyjściowych:
+przykład danych wejsiowych i wyjściowych wjednej strukturze
 
-$outputCollection = [
-    'FromJson' =>  [
-        'Token' => '',
-        'Status' => '',
-        'Info' => ''
-    ],
-    'Request' =>  [
-        'Token' => '',
-        'Status' => '',
-        'Info' => ''
-    ],
-    'ToJson' =>  [
-        'Token' => '',
-        'Status' => '',
-        'Info' => ''
-    ],
-]
+    $outputCollection = [
+        'FromJson' [
+            'input'  =>  [
+              'UserLogin' => '',
+              'UserPassword' => ''
+            ],
+            'output'  =>  [
+              'Token' => '',
+              'Status' => '',
+              'Info' => ''
+            ],
+        ]
+        'Request' =>  
+            'input'  =>  [
+              'UserLogin' => '',
+              'UserPassword' => ''
+            ],
+            'output'  =>  [
+              'Token' => '',
+              'Status' => '',
+              'Info' => ''
+            ],
+        'ToJson' =>  [
+            'Token' => '',
+            'Status' => '',
+            'Info' => ''
+        ],
+    ]
 
