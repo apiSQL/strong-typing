@@ -35,7 +35,7 @@ Chodzi też o unikanie tworzenia struktury, gdyż to nie ma znaczenia dla proces
 a to tylko wprowadza komplikację
 
 
-#### Przykład w języku PHP
+#### Przykład 1 w języku PHP
 
 stwórzmy kolekcję danych potrzebnych do zwrócenia tokenu:
 potrzebujemy dane wejściowe
@@ -55,7 +55,9 @@ potrzebujemy dane wejściowe
 dane wyjściowe        
 
         $outputCollection = new DataCollection(
-          new Token()
+          new Token(),
+          new Status(),
+          new Info(),
         )        
 
 Procesy jakie powinny być wykonane po stronie klienta to wysłanie tych danych na serwer w formacie JSON i pobranie JSON oraz konwersja na dane w formacie PHP
@@ -74,7 +76,9 @@ ale możliwe jest też budowanie płaskiej struktury
 
        $processCollection = new ProcessCollection(
          new FromJson(),
-         new Request(),
+         new Request(
+            new POST()
+         ),
          new ToJson(),
        )
 
@@ -95,4 +99,68 @@ Wykonaj prcesy i w oparciu o dostarczone dane wygeneruj nowe
             $processCollection,
             $configCollection,           
          )
+         
+         
+
+#### Przykład 2 w języku PHP
+
+Uproszczenie przykłądu 1
+
+Potrzebujemy dane wejściowe w zależności od tego jakie procesy będą używane, więc najpierw 
+tworzyłymy kolekcję procesów:
+Dane do konfiguracji mogą być przygotowane w zależności od potrzeb w samych procesach
+
+       $processCollection = new ProcessCollection(
+         new FromJson(),
+         new Request(
+            new POST()
+         ),
+         new ToJson(),
+       )
+
+
+Następnie budujemy listę danych wejściowych i wyjściowych
+
+        $inputCollection = new DataCollection(
+          new Url("https://apisql.com/authorisation"),
+          new UserLogin("tomasz"),
+          new UserPassword("$ecret447"),
+        )
+        
+dane wyjściowe, które powinny być dostarczone na koniec wykonania procesów, przez różne procesy,
+jeśli każdy z procesów generuje tego typu dane, to musi być tworzona kolekcja danych wyjściowych z parą od krórego procesu pochodzi dana.
+
+        $outputCollection = new DataCollection(
+          new Token(),
+          new Status(),
+          new Info(),
+        )        
+
+Wykonaj prcesy i w oparciu o dostarczone dane wygeneruj nowe
+
+         $authorisation = new Execute(
+            $inputCollection,
+            $outputCollection,
+            $processCollection,
+         )         
+
+przykład danych wyjściowych:
+
+$outputCollection = [
+    'FromJson' =>  [
+        'Token' => '',
+        'Status' => '',
+        'Info' => ''
+    ],
+    'Request' =>  [
+        'Token' => '',
+        'Status' => '',
+        'Info' => ''
+    ],
+    'ToJson' =>  [
+        'Token' => '',
+        'Status' => '',
+        'Info' => ''
+    ],
+]
 
