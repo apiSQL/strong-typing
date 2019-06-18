@@ -34,31 +34,53 @@ W ten sposób definicja procesów, funkcji w naturalny sposób waliduje
 Chodzi też o unikanie tworzenia struktury, gdyż to nie ma znaczenia dla procesu jaka jest struktura danych
 a to tylko wprowadza komplikację
 
-np:
+
+#### Przykład w języku PHP
+
 stwórzmy kolekcję danych potrzebnych do zwrócenia tokenu:
-potrzebujemy to
+potrzebujemy dane wejściowe
 
 + adres url
 + login
 + hasło
 
 
-    $dataCollection = new DataCollection(
-      new Url("https://apisql.com/authorisation"),
-      new UserLogin("tomasz"),
-      new UserPassword("$ecret447"),
-    )
+
+        $inputCollection = new DataCollection(
+          new Url("https://apisql.com/authorisation"),
+          new UserLogin("tomasz"),
+          new UserPassword("$ecret447"),
+        )
+        
+dane wyjściowe        
+
+        $outputCollection = new DataCollection(
+          new Token()
+        )        
+
+Procesy jakie powinny być wykonane po stronie klienta to wysłanie tych danych na serwer w formacie JSON i pobranie JSON oraz konwersja na dane w formacie PHP
+
+        $processCollection = new ProcessCollection(
+          
+          new Request(),
 
 
-    $processCollection = new ProcesCollection(
-      new Request("authorisation"),
+        )
 
+Konfiguracja dotyczy parametrów jakie mogą być przydatne dla procesów, jest to zależne od konrketnego procesu,
+są to głównie zmienne środowiskowe
 
-    )
+        $configCollection = new ConfigCollection(
+          new API('RESTAPI'),
+          new DB('Mysql'),          
+        )
 
+Wykonaj prcesy i w oparciu o dostarczone dane wygeneruj nowe
 
-     $authorisation = new Execute(
-        $dataCollection,
-        $processCollection
-     )
+         $authorisation = new Execute(
+            $inputCollection,
+            $outputCollection,
+            $processCollection,
+            $configCollection,           
+         )
 
