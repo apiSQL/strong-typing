@@ -36,13 +36,17 @@ a to tylko wprowadza komplikację
 
 np:
 stwórzmy kolekcję danych potrzebnych do zwrócenia tokenu:
-potrzebujemy to adres url, login, hasło
+potrzebujemy to
+
++ adres url
++ login
++ hasło
 
 
     $dataCollection = new DataCollection(
       new Url("https://apisql.com/authorisation"),
-      new UserLogin("/authorisation"),
-      new UserPassword("/authorisation"),
+      new UserLogin("tomasz"),
+      new UserPassword("$ecret447"),
     )
 
 
