@@ -59,13 +59,25 @@ dane wyjściowe
         )        
 
 Procesy jakie powinny być wykonane po stronie klienta to wysłanie tych danych na serwer w formacie JSON i pobranie JSON oraz konwersja na dane w formacie PHP
+Procesy są budowane w strukturę, gdyż w ten sposób można określić kolejność działania i zależności
 
         $processCollection = new ProcessCollection(
           
-          new Request(),
-
-
+          new FromJson(
+              new Request(
+                new ToJson()
+              )
+          )                 
         )
+        
+ale możliwe jest też budowanie płaskiej struktury
+
+       $processCollection = new ProcessCollection(
+         new FromJson(),
+         new Request(),
+         new ToJson(),
+       )
+
 
 Konfiguracja dotyczy parametrów jakie mogą być przydatne dla procesów, jest to zależne od konrketnego procesu,
 są to głównie zmienne środowiskowe
