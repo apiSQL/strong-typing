@@ -15,6 +15,8 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendo
 use Apisql\Access\AccessOperation;
 use Apisql\Access\AccessRole;
 use Apisql\Access\AccessUser;
+use Apisql\Attribute\UserId;
+use Apisql\Attribute\UserFirstName;
 use Apisql\Attribute\UserEmail;
 use Apisql\Attribute\UserLogin;
 use Apisql\Attribute\UserPassword;
@@ -47,6 +49,11 @@ $source = null;
 
 // aktualizacja danych w DB
 $update = new Update($source, $model_worker);
+
+var_dump($update);
+
+die;
+
 //$access = new Access($update, new AccessRole('admin', 'manager'), new AccessUser());
 $access = new Access([
         new AccessRole('admin', 'manager'),

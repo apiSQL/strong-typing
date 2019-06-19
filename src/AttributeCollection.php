@@ -9,7 +9,7 @@
 namespace Apisql;
 
 
-class AttributeCollection
+class AttributeCollection extends CollectionAbstract
 {
     /** @var array */
     public $attribute_collection = [];
@@ -18,10 +18,10 @@ class AttributeCollection
      * AttributeCollection constructor.
      * @param array $attribute_collection
      */
-//    public function __construct(array $attribute_collection)
-//    {
-//        $this->attribute_collection = $attribute_collection;
-//    }
+    public function __construct(array $attribute_collection)
+    {
+        $this->attribute_collection = $attribute_collection;
+    }
 
 
 }

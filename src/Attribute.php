@@ -30,18 +30,20 @@ use Apisql\Crud\Create;
 
 $model_worker = new ModelAttributeCollection(
     'worker',
-    [
+    new \Apisql\AttributeCollection([
         new FirstName('firstname'),
         new LastName('lastname'),
         new Address('address'),
         new Identify(4)
-    ]
+    ])
 );
+
 $gen = new ModelAttributeSql($model_worker);
-$sql = $gen->sqlGenerator()->sql;
-var_dump($sql);
-var_dump($model_worker->toArray());
-var_dump($model_worker->val('Address'));
+//$sql = $gen->sqlGenerator()->sql;
+//var_dump($sql);
+//var_dump($model_worker->toArray());
+//var_dump($model_worker->val('Address'));
+
 
 // Pobieranie przez magiczne
 //$value = $model_worker->FirstName;

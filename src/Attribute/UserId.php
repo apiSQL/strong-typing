@@ -9,7 +9,10 @@
 namespace Apisql\Attribute;
 
 
-class UserId implements IdInterface
+class UserId implements \Apisql\IdInterface
 {
 
+    public function Id(){
+
+    }
 }

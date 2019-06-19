@@ -17,11 +17,11 @@ abstract class AccessAbstract
      * @param array $allows
      * @param array $disallows
      */
-    public function __construct(array $allows, array $disallows)
-    {
-        $this->allows = $allows;
-        $this->disallows = $disallows;
-    }
+//    public function __construct(array $allows, array $disallows)
+//    {
+//        $this->allows = $allows;
+//        $this->disallows = $disallows;
+//    }
 
     /**
      * @return array

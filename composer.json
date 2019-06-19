@@ -1,5 +1,11 @@
 {
-  "name": "tom-sapletta-com/php-func",
+  "name": "apisql/strong-typing",
+  "authors": [
+    {
+      "name": "Tom Sapletta",
+      "email": "tom@sapletta.com"
+    }
+  ],
   "version": "0.1.2",
   "description": "Strong Typing for PHP",
   "type": "library",
@@ -8,31 +14,24 @@
     "functional programming",
     "strong typing"
   ],
-  "homepage": "https://phpfunc.com",
-  "authors": [
-    {
-      "name": "Tomasz Sapletta",
-      "email": "tom@sapletta.com"
-    }
-  ],
-  "require": {
-    "php": ">=7.0",
-    "nesbot/carbon": "*",
-    "codeception/codeception": "*",
-    "tom-sapletta-com/phunc": "dev-master"
-  },
+  "homepage": "https://apisql.com",
   "autoload": {
     "psr-4": {
-      "Apisql\\": "src/",
-      "Config\\": "config/"
+      "Apisql\\": "src/"
     }
   },
   "require-dev": {
-    "phpunit/phpunit": "*"
+    "php": ">=7.0",
+    "phpunit/phpunit": "*",
+    "nesbot/carbon": "*"
   },
   "autoload-dev": {
     "psr-4": {
       "Apisql\\Tests\\": "tests/"
     }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "tom-sapletta-com/phunc": "dev-master"
   }
 }

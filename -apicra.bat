@@ -3,6 +3,9 @@
 :: author :: Tom Sapletta             ::
 :: home :: https://apicra.com         ::
 ::::::::::::::::::::::::::::::::::::::::
+:: gist :: https://gist.github.com/tom-sapletta-com/0ab2fbd82c6a6efba131db52588e1f3b
+:: install :: git clone https://gist.github.com/tom-sapletta-com/0ab2fbd82c6a6efba131db52588e1f3b apicra && copy apicra\* . && RMDIR /Q /S apicra && -apicra.bat install
+::::::::::::::::::::::::::::::::::::::::
 @echo off
 :: Variables
 set PARAM=%~1

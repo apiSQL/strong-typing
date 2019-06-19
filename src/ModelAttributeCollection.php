@@ -21,10 +21,11 @@ class ModelAttributeCollection extends Model
      * ModelAttributeCollection constructor.
      * @param string $name
      */
-    public function __construct(string $name)
+    public function __construct(string $name, \Apisql\AttributeCollection $attribute_collection)
     {
         $this->name = $name;
-        $this->attribute_collection = new AttributeCollection();
+        $this->attribute_collection = $attribute_collection;
+//        $this->attribute_collection = new AttributeCollection();
     }
 
     public function __call($name, $arguments)
@@ -80,11 +81,12 @@ class ModelAttributeCollection extends Model
         return $this->toArray()[$name];
     }
 
+
     public function toArray()
     {
 //        $this->attribute_collection->toArray();
         $array = [];
-        foreach ($this->attribute_collection as $object){
+        foreach ($this->attribute_collection->toA as $object){
             $array[$this->getClassnameByObject($object)] = $object->getValue();
         }
         return $array;

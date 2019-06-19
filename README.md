@@ -14,22 +14,48 @@ or
     
     git clone https://gist.github.com/tom-sapletta-com/0ab2fbd82c6a6efba131db52588e1f3b .apicra && .apicra/-apicra.bat install
 
-## composer 
- 
-### Install .apicra Module: composer
+## php
 
+install
+
+    -apicra.bat i php
+
+run
+
+    -php.bat exec -v
+
+## composer
+ 
+Install .apicra Module: composer
+
+    -php.bat install-composer
+    
     -apicra.bat i composer
         
-### Install Composer by .apicra Module
+Install Composer by .apicra Module
 
     -composer.bat i
 
+update packages
 
-### Install by Apicra
+    -php exec "composer.phar update"
 
-    sh /apicra/composer_install.sh
-    .\apicra\composer_install.bat
+
+.apicra\module\php\php-7.3.6-nts-Win32-VC15-x86\php.exe composer.phar u
+.apicra\module\php\php-7.3.6-nts-Win32-VC15-x86\php.exe composer.phar config minimum-stability dev
+.apicra\module\php\php-7.3.6-nts-Win32-VC15-x86\php.exe composer.phar global config minimum-stability dev
+
+
+### Composer
+
+init project
+
+    composer init
+
+update libraries
     
+    composer update
+
 ## Routing
 
 /{Operation:Create,Delete}/{Model}
