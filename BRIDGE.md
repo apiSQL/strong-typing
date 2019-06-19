@@ -177,4 +177,22 @@ przykład danych wejsiowych i wyjściowych wjednej strukturze
             'Info' => ''
         ],
     ]
+    
+    
+
+## Tabela 1
+    
+        
+    Dane in | Dane Out | Proces
+    
+    Login               
+    Password                    
+                        Autoryzacja
+              Status
+              Info
+              Token
+              
+            
+            
+            
 
