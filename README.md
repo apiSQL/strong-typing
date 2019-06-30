@@ -1,6 +1,7 @@
 # strong-typing
 With Objects to generate any application with example benefits 
 
+(BRIDGE.md)[BRIDGE.md]
 ### Install -apicra
 
     echo .apicra/ >> .gitignore
